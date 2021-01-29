@@ -1,0 +1,10 @@
+.pianos {
+  width: 100%;
+}
+
+@media screen and (min-width: 975px) {
+  .pianos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 30rem);
+  }
+}

@@ -24,10 +24,10 @@ export class Piano implements IPiano {
             id: '01',
             name: 'Very nice one',
             description: 'Very nice one Very nice one Very nice one Very nice one Very nice one',
-            image: '/assets/images/mock-image/piano-01.webp',
+            image: `/assets/images/mock-image/piano-${Math.floor(Math.random() * 10)}.jpg`,
             images: [dummyImg, dummyImg],
             attributes: {color: 'black', type: 'digital'},
-            price: 1000
+            price: Math.floor(Math.random() * 1000)
         });
     }
 }

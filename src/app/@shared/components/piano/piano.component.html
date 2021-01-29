@@ -1,3 +1,16 @@
-<p>
-  {{piano.name}}
-</p>
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>{{piano.name | titlecase}}</ion-card-title>
+    <ion-card-subtitle>{{piano.price | currency: 'USD'}}</ion-card-subtitle>
+  </ion-card-header>
+  <ion-card-content>
+    <div>
+      <ion-img [src]="piano.image" [alt]="piano.name"></ion-img>
+    </div>
+    <div dir="rtl" style="margin-top: .75rem">
+      <ion-button [color]="'primary'" size="small">
+        Detail
+      </ion-button>
+    </div>
+  </ion-card-content>
+</ion-card>

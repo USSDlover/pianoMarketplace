@@ -11,6 +11,7 @@ export class PianoComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() {
+  }
 
 }

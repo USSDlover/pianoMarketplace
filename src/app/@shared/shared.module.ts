@@ -1,5 +1,7 @@
 import {NgModule} from '@angular/core';
 import {PianoComponent} from './components';
+import {IonicModule} from '@ionic/angular';
+import {CommonModule} from '@angular/common';
 
 const Pipes = [];
 
@@ -11,12 +13,18 @@ const Components = [
     PianoComponent
 ];
 
-const Modules = [];
+const Modules = [
+    IonicModule,
+    CommonModule
+];
 
 /**
- *
+ * Contains shared modules, components, directives and pipes
  */
 @NgModule({
+    imports: [
+        ...Modules
+    ],
     declarations: [...Components],
     exports: [
         ...Modules,

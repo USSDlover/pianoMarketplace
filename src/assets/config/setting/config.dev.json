@@ -1,0 +1,9 @@
+{
+  "env": {
+    "name": "DEV"
+  },
+  "apiServer": {
+    "base": "http://185.128.136.217:8083",
+    "meta": "/api/v1"
+  }
+}

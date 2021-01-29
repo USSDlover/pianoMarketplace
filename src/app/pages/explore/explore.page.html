@@ -13,5 +13,7 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Explore Page"></app-explore-container>
+  <ng-container *ngFor="let piano of pianos">
+    <app-piano [piano]="piano"></app-piano>
+  </ng-container>
 </ion-content>

@@ -14,6 +14,9 @@ const Providers = [
   StorageService
 ];
 
+/**
+ * Contains core service, interfaces and models only
+ */
 @NgModule({
   imports: [HttpClientModule],
 })
